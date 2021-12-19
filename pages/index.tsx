@@ -64,7 +64,7 @@ const GenerateOrder = ({ amount }) => {
 
   var qrcodelink = "https://www.bitcoinqrcodemaker.com/api/?style=ethereum&amount=" + amount + "&fiat=USD&address="+ acc;
 return(<>
-  <img src={qrcodelink} height="150" width="150" alt="Ethereum QR Code" />
+  <img src={qrcodelink} height="150" width="150" alt="QR Code" />
 </>)
 }
 
@@ -421,9 +421,9 @@ function App() {
     alignItems: 'center',
     justifyContent: 'top'
   }}>
-{qr1}
-{qr2}
-{qr3}
+<QRbox amount="11"/>
+<QRbox amount="11"/>
+<QRbox amount="11"/>
 </div>
 <div   style={{
     display:'flex',
@@ -431,9 +431,9 @@ function App() {
     alignItems: 'center',
     justifyContent: 'top'
   }}>
-{qr4}
-{qr5}
-{qr6}
+<QRbox amount="11"/>
+<QRbox amount="11"/>
+<QRbox amount="11"/>
 </div>
 </div>
 <div   style={{
